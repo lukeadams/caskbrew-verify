@@ -5,13 +5,13 @@ rvm:
  - "2.2.3"
 
 before_script:
- #Update brew
- - brew update; brew upgrade
+ #Update brew. Dont `brew upgrade` -> There are a bunch of deps that we don't use
+ - brew update; brew upgrade homebrew
  #Install Cask
  - brew install caskroom/cask/brew-cask
 
  #Foor good measure...
- - brew update; brew upgrade
+ - brew update
 
 script:
  - ruby lib/test-all.rb
