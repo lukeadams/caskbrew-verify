@@ -3,8 +3,12 @@ os: osx
 
 rvm:
  - "2.2.3"
- - rbx
+
+before_script:
+ #Install Cask
+ - brew install caskroom/cask/brew-cask
 
 script:
- - which brew
+ - ruby -v
+ #
  - brew cask help
