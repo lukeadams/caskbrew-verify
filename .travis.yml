@@ -5,10 +5,13 @@ rvm:
  - "2.2.3"
 
 before_script:
+ #Update brew
+ - brew update; brew upgrade
  #Install Cask
  - brew install caskroom/cask/brew-cask
 
+ #Foor good measure...
+ - brew update; brew upgrade
+
 script:
- - ruby -v
- #
- - brew cask help
+ - ruby lib/test-all.rb
