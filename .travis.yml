@@ -1,0 +1,10 @@
+language: ruby
+os: osx
+
+rvm:
+ - "2.2.3"
+ - rbx
+
+script:
+ - which brew
+ - brew cask help
