@@ -14,4 +14,5 @@ before_script:
  - brew update
 
 script:
+ - gem install thread
  - ruby lib/test-all.rb
