@@ -14,11 +14,10 @@ for cask in CASKS[0..10] do
 
 			#Remove the cask
 			uninstall, uninstall_res = `brew cask zap #{cask}`, $?
-
 		else
 			#Some error
 			puts "error: Brew failed to install #{cask}"
-		
+		end
 		
 	end
 end
